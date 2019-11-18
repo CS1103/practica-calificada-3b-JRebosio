@@ -33,6 +33,7 @@ Rectangles::Rectangles(const string &file) {
     temp.fy=f+temp.y;
     figures.emplace_back(temp);
     while(s>>a>>temp.x>>temp.y>>f>>c){
+        if (a!= 'A')  throw logic_error("Se encontro una accion distinta a la letra A");
         if (f < 0) throw logic_error("Se encontro una cantidad de filas negativa");
         if (c < 0) throw logic_error("Se encontro una cantidad de columnas negativa");
         temp.fx=temp.x+c;
