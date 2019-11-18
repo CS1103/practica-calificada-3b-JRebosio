@@ -9,7 +9,7 @@
 
 #define CATCH_CONFIG_MAIN
 int main() {
-    Rectangles rectangles("../rectangulos.in");
+    Rectangles rectangles("../Rectanglesin/rectangulos.in");
     ofstream myfile;
     myfile.open ("resultado.txt");
     rectangles.Save(myfile);
@@ -18,14 +18,14 @@ int main() {
 
 
     // Prueba
-    Rectangles rectangles2("../rectangulos2.in");
+    Rectangles rectangles2("../Rectanglesin/rectangulos2.in");
     ofstream myfile2;
     myfile2.open ("resultado2.txt");
     rectangles2.Save(myfile2);
     myfile2.close();
 
     //Prueba
-    Rectangles rectangles3("../rectangulos3.in");
+    Rectangles rectangles3("../Rectanglesin/rectangulos3.in");
     ofstream myfile3;
     myfile3.open ("resultado3.txt");
     rectangles3.Save(myfile3);
